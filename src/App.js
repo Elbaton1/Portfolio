@@ -22,7 +22,7 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />  {/* Home Page - About Death Battle */}
+            <Route path="/" element={<Home />} />  {/* Home Page */}
             <Route path="/about" element={<About />} />  {/* About Death Battle */}
             <Route path="/intro" element={<SkillsAndProjects />} />  {/* About Me */}
             <Route path="/battle" element={<HeroVsVillain />} />  {/* Death Battle */}
@@ -35,6 +35,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
