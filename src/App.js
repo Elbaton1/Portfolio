@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import HeroVsVillain from './components/HeroVsVillain';
@@ -18,18 +18,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
-        <div className="App">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />  {/* Home Page */}
-            <Route path="/about" element={<About />} />  {/* About Death Battle */}
-            <Route path="/intro" element={<SkillsAndProjects />} />  {/* About Me */}
-            <Route path="/battle" element={<HeroVsVillain />} />  {/* Death Battle */}
-          </Routes>
-          <Footer />
-        </div>
-      </Router>
+      {/* No Router here since it's wrapped in index.js */}
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/intro" element={<SkillsAndProjects />} />
+          <Route path="/battle" element={<HeroVsVillain />} />
+        </Routes>
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }
