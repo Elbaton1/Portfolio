@@ -84,7 +84,7 @@ const SkillsAndProjects = () => {
           variant="contained"
           color="primary"
           startIcon={<GetApp />}
-          href="/Michael_Obrien_Resume.pdf"
+          href={`${process.env.PUBLIC_URL}/Michael_Obrien_Resume.pdf`}
 
           download="Michael_Obrien_Resume.pdf"
           className="download-resume-button"
