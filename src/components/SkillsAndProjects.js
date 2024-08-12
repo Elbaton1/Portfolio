@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Box, Typography, Paper, Link, Grid, IconButton, Button } from '@mui/material';
 import { GitHub, LinkedIn, Language, GetApp } from '@mui/icons-material';
 import '../styles.css';
+import DownloadIcon from '@mui/icons-material/Download';
+
 
 const SkillsAndProjects = () => {
   return (
@@ -80,17 +82,16 @@ const SkillsAndProjects = () => {
       </Box>
 
       <Box sx={{ textAlign: 'center', mt: 4 }}>
-        <Button
-          variant="contained"
-          color="primary"
-          startIcon={<GetApp />}
-          href={`${process.env.PUBLIC_URL}/Michael_Obrien_Resume.pdf`}
+      <Button
+  variant="contained"
+  color="primary"
+  startIcon={<DownloadIcon />}
+  href={`${process.env.PUBLIC_URL}/Michael_Obrien_Resume.pdf`}
+  download="Michael_Obrien_Resume.pdf"
+>
+  Download Resume
+</Button>
 
-          download="Michael_Obrien_Resume.pdf"
-          className="download-resume-button"
-        >
-          Download Resume
-        </Button>
       </Box>
     </Container>
   );
