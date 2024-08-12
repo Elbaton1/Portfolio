@@ -125,7 +125,7 @@ const HeroVsVillain = () => {
           DEATH BATTLE AI
         </Typography>
         <Typography variant="h6" className="comic-subtitle" gutterBottom>
-          Select two characters to see who would win based on their stats, and generate a detailed battle scene. It's not just superheroes and villains, it's all kinds of sci-fi characters!
+          Select two characters to see who would win based on their stats, and generate a detailed battle scene. It's not just superheroes and villains, it's all kinds of sci-fi characters! Either press the dropdown menu to see what we have or search and then hit the dropdown menu to see if we have what youre looking for :D
         </Typography>
         <Paper sx={{ p: 2, mb: 4, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
           <Grid container spacing={3}>

@@ -82,6 +82,7 @@ const SkillsAndProjects = () => {
       </Box>
 
       <Box sx={{ textAlign: 'center', mt: 4 }}>
+        <h3>Download my resume!!</h3>
       <Button
   variant="contained"
   color="primary"
